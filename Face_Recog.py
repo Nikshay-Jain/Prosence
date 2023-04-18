@@ -3,6 +3,7 @@ import face_recognition
 import numpy as np
 import cv2 as cv
 import os
+import time
 
 #Directory path for training images
 path = 'Photos'
@@ -43,7 +44,12 @@ def presence(name):
 
 #Get input from camera
 cap = cv.VideoCapture(0)
+
+t1=time.time()
+t=0
+
 while True:
+    t+=1
     success, img = cap.read()
     
     #Reduce size to 1/4th to speed up
@@ -71,5 +77,8 @@ while True:
     cv.imshow('Detections',img)
     if cv.waitKey(20) & 0xFF==ord('q'):
         break
+
+t2=time.time()
 cap.release()
 cv.destroyAllWindows()
+print(t/(t2-t1),"frames analysed per sec")
