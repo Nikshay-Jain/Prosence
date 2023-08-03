@@ -10,11 +10,11 @@ This project aims at providing a software that can remember human faces along wi
 #### Technology Stack:
 The Face Recognition System utilizes the following technologies:
 1. **OpenCV**: A popular computer vision library that provides essential tools and algorithms for image and video processing.
-2. **Face-recognition**: A neural network based on dlib and cmake, specifically designed for face recognition tasks. It effectively recognizes faces from the list of individuals fed into the system.
+2. **Face-recognition**: A neural network based on **dlib and cmake**, specifically designed for face recognition tasks. It effectively recognizes faces from the list of individuals fed into the system.
 
 #### Marking the Presence of Faces:
 The presence of a face is marked in $\textit{Presence.csv}$ file along with the time instant when the face is recognised.
 The sheet $\textit{Presence.csv}$ gets **cleared off before each new execution** of program.
 
 #### Conclusion:
-The Face Recognition System presented here utilizes OpenCV and face-recognition libraries to accurately detect and recognize human faces. By following the instructions outlined in this documentation, users can seamlessly add new faces to the system's database, track the presence of faces, and clear the data sheet for each subsequent execution.
+The Face Recognition System presented here utilizes OpenCV and face-recognition libraries to detect and recognize human faces accurately. By following the instructions outlined in this documentation, users can seamlessly add new faces to the system's database, track the presence of faces, and clear the data sheet for each subsequent execution.
