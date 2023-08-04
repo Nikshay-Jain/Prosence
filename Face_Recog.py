@@ -11,13 +11,6 @@ list = os.listdir(path)
 images = []
 names = []
 
-#Array of images and names
-for cls in list:
-    img = cv.imread(f'{path}/{cls}')
-    images.append(img)
-    names.append(os.path.splitext(cls)[0])
-    #[0] to remove extensions from names
-
 #Encoding images in array
 def encodings(images):
     enclist = []
@@ -26,6 +19,12 @@ def encodings(images):
         encode = face_recognition.face_encodings(img)[0]
         enclist.append(encode)
     return enclist
+
+#Array of images and names
+for cls in list:
+    img = cv.imread(f'{path}/{cls}')
+    images.append(img)
+    names.append(os.path.splitext(cls)[0])      #[0] to remove extensions from names
 
 KnownList = encodings(images)
 
