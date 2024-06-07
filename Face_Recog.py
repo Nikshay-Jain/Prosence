@@ -54,6 +54,7 @@ while True:
     #Reduce size to 1/4th to speed up
     imgs = cv.resize(img,(0,0),None,0.25,0.25)
     imgs = cv.cvtColor(imgs,cv.COLOR_BGR2RGB)
+    
     face_frame = face_recognition.face_locations(imgs)
     enc_frame = face_recognition.face_encodings(imgs,face_frame)
     
