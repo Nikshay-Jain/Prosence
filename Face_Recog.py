@@ -136,7 +136,7 @@ while True:
         if (average_fps < target_fps - 1) or (lag > ((fps_check_interval/target_fps)*1.1)):
             frame_interval = min(frame_interval + 1, max_frm_int)
         
-        # inc frame_interval (atleast >= 1) if lower fps is needed or lag is too low 
+        # inc frame_interval (atleast >= 1) if lower fps is needed
         elif (average_fps > target_fps + 1):
             frame_interval = max(frame_interval - 1, 1)
     
