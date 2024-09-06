@@ -92,7 +92,7 @@ while True:
         
         # Compare faces
         for encode_face, face_loc in zip(face_encodings, face_locations):
-            matches = face_recognition.compare_faces(KnownList, encode_face, tolerance=0.4)     # tolerance - lower the stricter
+            matches = face_recognition.compare_faces(KnownList, encode_face, tolerance=0.5)     # tolerance - lower the stricter
             
             # face_distances is array of distances of input from known images. Min needed.
             face_distances = face_recognition.face_distance(KnownList, encode_face)
