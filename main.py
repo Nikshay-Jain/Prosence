@@ -2,8 +2,7 @@ from datetime import datetime
 import face_recognition
 import numpy as np
 import cv2 as cv
-import os
-import time
+import os, time
 
 # Directory path for training images
 path = 'Photos'
