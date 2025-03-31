@@ -12,22 +12,33 @@ names = []
 
 # Create logs directory if it doesn't exist
 LOGS_DIR = 'logs'
+OUTPUT_DIR = 'output'
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(LOGS_DIR, exist_ok=True)
 
 # Configure logging
-log_filename = f"prosence_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"  # Replace ':' with '-'
+log_filename = f"prosence_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
 
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler(os.path.join(LOGS_DIR, log_filename)),  # Use the dynamically generated filename
+        logging.FileHandler(os.path.join(LOGS_DIR, log_filename)),
         logging.StreamHandler()
     ]
 )
 
 logger = logging.getLogger('FaceRecognition')
 logger.info(f"Logging to file: {log_filename}")
+
+# Create a new CSV file in OUTPUT_DIR on every execution
+csv_filename = f"Presence_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.csv"
+csv_path = os.path.join(OUTPUT_DIR, csv_filename)
+
+with open(csv_path, 'w') as f:
+    f.write("Name,Time\n")
+
+logger.info(f"Presence CSV initialized: {csv_filename}")
 
 # Encoding images in array
 def encodings(images):
@@ -53,7 +64,7 @@ KnownList = encodings(images)
 # Mark presence in CSV file
 def presence(name):
     logger.info(f"Marking presence for: {name}")
-    with open('Presence.csv', 'r+') as f:
+    with open(csv_path, 'r+') as f:
         data = f.readlines()
         nameList = set(line.split(',')[0] for line in data)
         if name not in nameList:
