@@ -84,19 +84,21 @@ Prosence is an automated attendance system that uses facial recognition to ident
 
 ### Running the System
 ```bash
-python main.py
+streamlit run scripts/app.py
 ```
 
 ## File Structure
 ```
 Prosence/
-├── Photos/                         # Folder for face database
 ├── venv/                           # Virtual environment
+├── Photos/                         # Folder for face database
 ├── logs/                           # Logs directory (system events and attendance tracking)
 |    └──prosence_<timestamp>.log
 ├── output/                         # Directory for dynamically generated CSV attendance files
 |    └──Presence_<timestamp>.csv    # Attendance records (new file for each execution)
-├── main.py                         # Main application script
+├── scripts/                        # Directory containing code files
+|    ├──main.py                     # Main application script
+|    └──app.py                      # Streamlit application
 ├── requirements.txt                # Dependency list
 ├── .gitignore                      # Gitignore file
 └── README.md                       # This file

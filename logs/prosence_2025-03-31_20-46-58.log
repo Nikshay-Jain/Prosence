@@ -1,8 +1,0 @@
-2025-03-31 20:46:58,186 - INFO - Logging to file: prosence_2025-03-31_20-46-58.log
-2025-03-31 20:46:58,188 - INFO - Presence CSV initialized: Presence_2025-03-31_20-46-58.csv
-2025-03-31 20:46:58,189 - INFO - Loading training images and names.
-2025-03-31 20:46:58,232 - INFO - Loaded 5 images.
-2025-03-31 20:46:58,233 - INFO - Starting image encodings.
-2025-03-31 20:47:03,889 - INFO - Image encodings completed.
-2025-03-31 20:47:18,319 - INFO - Marking presence for: Nikshay Jain
-2025-03-31 20:47:18,325 - INFO - Nikshay Jain presence recorded at 20:47:18
