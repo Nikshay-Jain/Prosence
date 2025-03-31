@@ -1,4 +1,10 @@
-numpy
-opencv-python
-cmake
-face_recognition
+click==8.1.8
+cmake==4.0.0
+colorama==0.4.6
+dlib==19.22.99
+face-recognition==1.3.0
+face_recognition_models==0.3.0
+logging==0.4.9.6
+numpy==1.24.4
+opencv-python==4.11.0.86
+pillow==10.4.0
