@@ -1,0 +1,6 @@
+2025-03-31 20:30:50,037 - INFO - Logging to file: prosence_2025-03-31_20-30-50.log
+2025-03-31 20:30:50,040 - INFO - Presence CSV initialized: Presence_2025-03-31_20-30-50.csv
+2025-03-31 20:30:50,041 - INFO - Loading training images and names.
+2025-03-31 20:30:50,107 - INFO - Loaded 5 images.
+2025-03-31 20:30:50,107 - INFO - Starting image encodings.
+2025-03-31 20:30:57,523 - INFO - Image encodings completed.

@@ -90,15 +90,16 @@ python main.py
 ## File Structure
 ```
 Prosence/
-├── Photos/                  # Folder for face database
-├── venv/                    # Virtual environment
-├── logs/                    # Logs directory (system events and attendance tracking)
-├── output/                  # Directory for dynamically generated CSV attendance files
-├── Presence_<timestamp>.csv # Attendance records (new file for each execution)
-├── main.py                  # Main application script
-├── requirements.txt         # Dependency list
-├── .gitignore               # Gitignore file
-└── README.md                # This file
+├── Photos/                         # Folder for face database
+├── venv/                           # Virtual environment
+├── logs/                           # Logs directory (system events and attendance tracking)
+|    └──prosence_<timestamp>.log
+├── output/                         # Directory for dynamically generated CSV attendance files
+|    └──Presence_<timestamp>.csv    # Attendance records (new file for each execution)
+├── main.py                         # Main application script
+├── requirements.txt                # Dependency list
+├── .gitignore                      # Gitignore file
+└── README.md                       # This file
 ```
 
 ## Output Format

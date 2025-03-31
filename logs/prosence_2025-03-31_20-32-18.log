@@ -1,0 +1,25 @@
+2025-03-31 20:32:18,165 - INFO - Logging to file: prosence_2025-03-31_20-32-18.log
+2025-03-31 20:32:18,169 - INFO - Presence CSV initialized: Presence_2025-03-31_20-32-18.csv
+2025-03-31 20:32:18,169 - INFO - Loading training images and names.
+2025-03-31 20:32:18,237 - INFO - Loaded 5 images.
+2025-03-31 20:32:18,237 - INFO - Starting image encodings.
+2025-03-31 20:32:24,814 - INFO - Image encodings completed.
+2025-03-31 20:32:44,672 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:32:44,675 - INFO - Nikshay Jain presence recorded at 20:32:44
+2025-03-31 20:32:48,011 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:32:54,565 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:32:58,375 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:02,413 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:06,803 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:11,298 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:15,948 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:21,205 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:26,478 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:28,396 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:34,043 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:40,149 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:44,478 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:48,938 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:53,353 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:33:57,314 - INFO - Marking presence for: Nikshay Jain
+2025-03-31 20:34:01,182 - INFO - Marking presence for: Nikshay Jain
